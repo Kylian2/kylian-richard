@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style-commun.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+  <title>Kylian Richard</title>
+</head>
+<body>
+    <div id="droite" class="barre cote"></div>
+    <div id="gauche" class="barre cote"></div>
+    <div id="haut" class="barre paysage"></div>
+    <div id="bas" class="barre paysage"></div>
+
+    <div id="contenu">
+
+      <img src="images/logo-kylian.svg" alt="logo" id="logo">
+      <div id="presentation">
+        <span id="nom">Kylian Richard</span>
+        <h1>Web Développeur Junior</h1>
+      </div>
+  
+      <div id="navigation">
+        <li style="--i:3;" id="option3" class="option"><a href="index.html">Accueil</a></li>
+        <li style="--i:2;" id="option2" class="option"><a href="projet.html">Portfolio</a></li>
+        <li style="--i:1;" id="option1" class="option"><a href="#">Contact et à propos</a></li>
+        <span id="menu-nav" onclick="active_unactive">Menu</span>
+      </div>
+
+    </div>
+
+    
+    
+</body>
+
+<script>
+
+  /* --- menu --- */
+
+  const menu = document.querySelector('#menu-nav');
+  const option1 = document.querySelector('#option1');
+  const option2 = document.querySelector('#option2');
+  const option3 = document.querySelector('#option3');
+  const option4 = document.querySelector('#option4');
+  menu.onclick = function active_unactive(){
+    option1.classList.toggle('active');
+    option2.classList.toggle('active');
+    option3.classList.toggle('active');
+    option4.classList.toggle('active');
+    menu.classList.toggle('active');
+  }
+  
+
+</script>
