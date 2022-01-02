@@ -1,0 +1,245 @@
+
+body{
+    background: var(--blanc-clair);
+    overflow: hidden;
+}
+
+/* ------------ BARRE AUTOUR ---------------- */
+
+#droite{
+    animation: droite 3s;
+    position: absolute;
+    right: 7vw;
+}
+
+#gauche{
+    position: absolute;
+    animation: gauche 3s;
+    left: 7vw;
+}
+
+#haut{
+    animation: haut 3s;
+    position: absolute;
+    top: 7vw;
+}
+
+#bas{
+    animation: bas 3s;
+    position: absolute;
+    bottom: 7vw;
+}
+
+
+/* ------------ FIN BARRE AUTOUR ---------------- */
+
+#nom{
+    display: block;
+    font-family: 'League Gothic Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 97px;
+    color: var(--bleu-fonce);
+    text-transform: uppercase;
+    text-align: center;
+    width: 40vw;
+    left: calc(50vw - 20vw);
+}
+
+#presentation h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--noir);
+    text-transform: inherit;
+    line-height: inherit;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20vw;
+    width: 40vw;
+    left: calc(50vw - 20vw);
+}
+
+/* --------- BARRE DE NAVIGATION -------- */
+
+#navigation{
+    color: var(--bleu-fonce);
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 70px;
+    left: calc(50vw - 100px);
+    margin-bottom: 3vw;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navigation span{
+    font-family: 'Sarabun-Bold';
+    position: relative;
+    z-index: 100;
+}
+
+#navigation li{
+    list-style-type: none;
+    visibility: hidden;
+    position: relative;
+    top: calc(55px * var(--i));
+    z-index: 1;
+    transition: .3s ease-in;
+    width: 350px;
+}
+
+#navigation li a{
+    color: var(--bleu-fonce);
+    font-family: 'Sarabun-Bold';
+}
+
+#menu-nav::after{
+    content: '';
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-right : 10px solid transparent;
+    border-bottom : 17px solid var(--bleu-fonce);
+    border-left : 10px solid transparent;
+    transform: rotate(180deg);
+    transition: .6s ease-in-out;
+    margin-left: 5px;
+}
+
+#menu-nav.active::after{
+    transform: rotate(720deg);
+}
+
+li.active a{
+    text-decoration: none;
+    visibility: visible;
+    line-height: 3px;
+    position: relative;
+    top: calc(-55px * var(--i));
+    animation: opaciter .6s;
+    animation-delay: calc( .2s * var(--i));
+    transition-delay: calc( .3s * var(--i))
+}
+
+
+@keyframes opaciter{
+    from{
+        opacity: 0;
+        top: calc(55px * var(--i));
+    }
+
+    50%{
+        opacity: .5;
+    }
+    to{
+        opacity: 1;
+        top: calc(-55px * var(--i));
+    }
+}
+
+/* --------- FIN DE LA NAV BARRE ---------- */
+
+/* --------- LOGO ------------ */
+
+#logo{
+    width: 75px;
+    position: absolute;
+    top: 10vw;
+    left: calc(50vw - 70px);
+}
+
+/* ------------ ROND QUI TOURNE ----------- */
+
+.rond{
+    min-width: 200px;
+    width: 25%;
+    opacity: .5;
+}
+
+#rond1{
+    position: absolute;
+    left: -100px;
+    bottom: -50px;
+    z-index: 1;
+    transform: rotate(30deg);
+    animation: tourne1 50s infinite;
+}
+
+#rond2{
+    position: absolute;
+    top: -100px;
+    left: 140px;
+    z-index: 1;
+    transform: rotate(100deg);
+    animation: tourne2 50s infinite;
+}
+
+#rond3{
+    position: absolute;
+    right: -100px;
+    z-index: 1;
+    transform: rotate(10deg);
+    animation: tourne3 50s infinite;
+}
+
+@keyframes tourne1 {
+    from{
+        transform: rotate(30deg);
+    }
+
+    50%{
+        transform: rotate(390deg);
+    }
+
+    to{
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes tourne2 {
+    from{
+        transform: rotate(100deg);
+    }
+
+    50%{
+        transform: rotate(460deg);
+    }
+
+    to{
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes tourne3 {
+    from{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(370deg);
+    }
+
+    to{
+        transform: rotate(10deg);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #logo{
+        display: none;
+    }
+}

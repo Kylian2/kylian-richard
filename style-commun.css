@@ -1,0 +1,355 @@
+/* ------------ DECLARATION DES POLICE -------------- */ 
+
+@font-face {
+    font-family: 'League Gothic Condensed Italic';
+    src: url('police/LeagueGothic-CondensedItalic.eot');
+    src: url('police/LeagueGothic-CondensedItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/LeagueGothic-CondensedItalic.woff2') format('woff2'),
+        url('police/LeagueGothic-CondensedItalic.woff') format('woff'),
+        url('police/LeagueGothic-CondensedItalic.ttf') format('truetype'),
+        url('police/LeagueGothic-CondensedItalic.svg#LeagueGothic-CondensedItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Gothic Italic';
+    src: url('police/LeagueGothic-Italic.eot');
+    src: url('police/LeagueGothic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('police/LeagueGothic-Italic.woff2') format('woff2'),
+        url('police/LeagueGothic-Italic.woff') format('woff'),
+        url('police/LeagueGothic-Italic.ttf') format('truetype'),
+        url('police/LeagueGothic-Italic.svg#LeagueGothic-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('police/LeagueGothic-Condensed.eot');
+    src: url('police/LeagueGothic-Condensed.eot?#iefix') format('embedded-opentype'),
+        url('police/LeagueGothic-Condensed.woff2') format('woff2'),
+        url('police/LeagueGothic-Condensed.woff') format('woff'),
+        url('police/LeagueGothic-Condensed.ttf') format('truetype'),
+        url('police/LeagueGothic-Condensed.svg#LeagueGothic-Condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Gothic Regular';
+    src: url('police/LeagueGothic-Regular.eot');
+    src: url('police/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('police/LeagueGothic-Regular.woff2') format('woff2'),
+        url('police/LeagueGothic-Regular.woff') format('woff'),
+        url('police/LeagueGothic-Regular.ttf') format('truetype'),
+        url('police/LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraLight';
+    src: url('police/Sarabun-ExtraLight.eot');
+    src: url('police/Sarabun-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-ExtraLight.woff') format('woff'),
+        url('police/Sarabun-ExtraLight.ttf') format('truetype'),
+        url('police/Sarabun-ExtraLight.svg#Sarabun-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraBoldItalic';
+    src: url('police/Sarabun-ExtraBoldItalic.eot');
+    src: url('police/Sarabun-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-ExtraBoldItalic.woff') format('woff'),
+        url('police/Sarabun-ExtraBoldItalic.ttf') format('truetype'),
+        url('police/Sarabun-ExtraBoldItalic.svg#Sarabun-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-ThinItalic';
+    src: url('police/Sarabun-ThinItalic.eot');
+    src: url('police/Sarabun-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-ThinItalic.woff') format('woff'),
+        url('police/Sarabun-ThinItalic.ttf') format('truetype'),
+        url('police/Sarabun-ThinItalic.svg#Sarabun-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-Thin';
+    src: url('police/Sarabun-Thin.eot');
+    src: url('police/Sarabun-Thin.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-Thin.woff') format('woff'),
+        url('police/Sarabun-Thin.ttf') format('truetype'),
+        url('police/Sarabun-Thin.svg#Sarabun-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-BoldItalic';
+    src: url('police/Sarabun-BoldItalic.eot');
+    src: url('police/Sarabun-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-BoldItalic.woff') format('woff'),
+        url('police/Sarabun-BoldItalic.ttf') format('truetype'),
+        url('police/Sarabun-BoldItalic.svg#Sarabun-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-Bold';
+    src: url('police/Sarabun-Bold.eot');
+    src: url('police/Sarabun-Bold.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-Bold.woff') format('woff'),
+        url('police/Sarabun-Bold.ttf') format('truetype'),
+        url('police/Sarabun-Bold.svg#Sarabun-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraBold';
+    src: url('police/Sarabun-ExtraBold.eot');
+    src: url('police/Sarabun-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-ExtraBold.woff') format('woff'),
+        url('police/Sarabun-ExtraBold.ttf') format('truetype'),
+        url('police/Sarabun-ExtraBold.svg#Sarabun-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-LightItalic';
+    src: url('police/Sarabun-LightItalic.eot');
+    src: url('police/Sarabun-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-LightItalic.woff') format('woff'),
+        url('police/Sarabun-LightItalic.ttf') format('truetype'),
+        url('police/Sarabun-LightItalic.svg#Sarabun-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-SemiBoldItalic';
+    src: url('police/Sarabun-SemiBoldItalic.eot');
+    src: url('police/Sarabun-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-SemiBoldItalic.woff') format('woff'),
+        url('police/Sarabun-SemiBoldItalic.ttf') format('truetype'),
+        url('police/Sarabun-SemiBoldItalic.svg#Sarabun-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-Italic';
+    src: url('police/Sarabun-Italic.eot');
+    src: url('police/Sarabun-Italic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-Italic.woff') format('woff'),
+        url('police/Sarabun-Italic.ttf') format('truetype'),
+        url('police/Sarabun-Italic.svg#Sarabun-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-SemiBold';
+    src: url('police/Sarabun-SemiBold.eot');
+    src: url('police/Sarabun-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-SemiBold.woff') format('woff'),
+        url('police/Sarabun-SemiBold.ttf') format('truetype'),
+        url('police/Sarabun-SemiBold.svg#Sarabun-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-ExtraLightItalic';
+    src: url('police/Sarabun-ExtraLightItalic.eot');
+    src: url('police/Sarabun-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-ExtraLightItalic.woff') format('woff'),
+        url('police/Sarabun-ExtraLightItalic.ttf') format('truetype'),
+        url('police/Sarabun-ExtraLightItalic.svg#Sarabun-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-MediumItalic';
+    src: url('police/Sarabun-MediumItalic.eot');
+    src: url('police/Sarabun-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-MediumItalic.woff') format('woff'),
+        url('police/Sarabun-MediumItalic.ttf') format('truetype'),
+        url('police/Sarabun-MediumItalic.svg#Sarabun-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-Regular';
+    src: url('police/Sarabun-Regular.eot');
+    src: url('police/Sarabun-Regular.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-Regular.woff') format('woff'),
+        url('police/Sarabun-Regular.ttf') format('truetype'),
+        url('police/Sarabun-Regular.svg#Sarabun-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-Medium';
+    src: url('police/Sarabun-Medium.eot');
+    src: url('police/Sarabun-Medium.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-Medium.woff') format('woff'),
+        url('police/Sarabun-Medium.ttf') format('truetype'),
+        url('police/Sarabun-Medium.svg#Sarabun-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sarabun-Light';
+    src: url('police/Sarabun-Light.eot');
+    src: url('police/Sarabun-Light.eot?#iefix') format('embedded-opentype'),
+        url('police/Sarabun-Light.woff') format('woff'),
+        url('police/Sarabun-Light.ttf') format('truetype'),
+        url('police/Sarabun-Light.svg#Sarabun-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+/*  
+font-family: 'Open Sans', sans-serif;   
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,800;1,800&display=swap');
+/*
+font-family: 'Sarabun', sans-serif;
+*/
+
+/* ----------------- FIN DE LA DECLARATION DES POLICES ----------------------*/
+
+:root{
+    --bleu-fonce: #26598D ;
+    --blanc-clair:  #DBDDE0;
+    --noir: #2C2C2C;
+}
+
+/* ----------------- RETRAIT DE PROPRIETE INDESIRABLE -----------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* ----------------- FIN RETRAIT DE PROPRIETE INDESIRABLE -----------------------*/
+
+body{
+    background: var(--blanc-clair);
+}
+
+h1{
+    font-family: 'League Gothic Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 97px;
+    color: var(--bleu-fonce);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --------------- ANIMATION --------------------- */
+
+@keyframes gauche {
+    from{
+        left: 2vw;
+    }
+    to{
+        left: 7vw;
+    }
+}
+
+@keyframes droite {
+    from{
+        right: 2vw;
+    }
+    to{
+        right: 7vw;
+    }
+}
+
+@keyframes haut {
+    from{
+        top: 2vw;
+    }
+    to{
+        top: 7vw;
+    }
+}
+
+@keyframes bas {
+    from{
+        bottom: 2vw;
+    }
+    to{
+        bottom: 7vw;
+    }
+}
+
+@keyframes bas-projet{
+    from{
+        margin-bottom: 2vw;
+    }
+    to{
+        margin-bottom: 7vw;
+    }
+}
+
+/* ----------- BARRE ----------- */
+
+.barre{
+    background: var(--bleu-fonce);
+    z-index: 10;
+}
+
+.paysage{
+    width: 100%;
+    height: 5px;
+}
+
+.cote{
+    width: 5px;
+    height: 100%;
+}
+
+/* ---------------------------- /*
